@@ -4,54 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>norbert — cv</title>
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'VT323', monospace;
-      background-color: #eeeeee;
-      color: #333;
+      font-family: 'Cutive', monospace;
       font-size: 1.25rem;
       line-height: 1.8;
+      color: #333;
+      background-color: #fdfcf6;
     }
+
     .nav {
       display: flex;
       justify-content: flex-start;
       padding: 1rem 2rem;
-      background: #ddd;
+      background-color: #e7e5db;
       border-bottom: 2px solid #bbb;
       font-size: 1.5rem;
     }
+
     .nav a {
       margin-right: 2rem;
       text-decoration: none;
       color: #222;
       cursor: pointer;
     }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 30% 700px auto;
+    }
+
+    .left {
+      background-color: #fdfcf6;
+    }
+
     .content {
+      background-color: #eeeeee;
       padding: 2rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: 10%;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
     }
-    .hero-image {
-      width: 100%;
-      margin: 2rem 0;
-      border: 1px solid #ccc;
+
+    .right {
+      background-color: #fdfcf6;
     }
-    .credit {
-      font-size: 1rem;
-      color: #666;
-      margin-bottom: 2rem;
+
+    .name {
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
     }
+
     h1 {
       font-size: 3rem;
-      border-bottom: 2px solid #bbb;
-      padding-bottom: 0.5rem;
       text-transform: lowercase;
-      margin-bottom: 2rem;
+      margin: 0;
     }
+
     h2 {
       font-size: 2rem;
       color: #555;
@@ -60,19 +71,36 @@
       margin-top: 3rem;
       padding-bottom: 0.25rem;
     }
-    ul {
-      padding-left: 1rem;
+
+    .hero-image {
+      width: 100%;
+      margin: 1rem 0 0.5rem;
+      border: 1px solid #ccc;
     }
-    li {
-      margin-bottom: 0.4rem;
+
+    .credit {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 2rem;
     }
+
     .section {
       margin-bottom: 2rem;
     }
+
     .title {
-      font-weight: bold;
+      font-weight: 500;
       color: #111;
     }
+
+    ul {
+      padding-left: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
     p {
       margin: 0.25rem 0;
     }
@@ -80,69 +108,72 @@
 </head>
 <body>
   <div class="nav">
-    <a href="#">home</a>
-    <a href="#contact">contact</a>
+    <a href="index.html">home</a>
+    <a href="contact.html">contact</a>
   </div>
-  <div class="content">
-    <h1>norbert — cv</h1>
 
-    <img class="hero-image" src="artwork-by-huleeb.jpg" alt="Artwork by Huleeb">
-    <div class="credit">
-      image by <a href="https://www.artstation.com/huleeb" target="_blank" style="color:#444; text-decoration: underline;">Huleeb</a> — <a href="https://cdna.artstation.com/p/assets/images/images/063/052/432/4k/huleeb-1225-20-may-2023-final.jpg?1684591134" target="_blank" style="color:#444; text-decoration: underline;">source</a>
-    </div>
+  <div class="wrapper">
+    <div class="left"></div>
+    <div class="content">
+      <div class="name">
+        <h1>norbert</h1>
+        <h1>rosman</h1>
+      </div>
 
-    <div class="section" id="contact">
-      <h2>contact</h2>
-      <p>netherlands</p>
-      <p>norbert.rosman@gmail.com</p>
-    </div>
+      <img class="hero-image" src="artwork-by-huleeb.jpg" alt="Artwork by Huleeb">
+      <div class="credit">
+        image by <a href="https://www.artstation.com/huleeb" target="_blank">Huleeb</a> — 
+        <a href="https://cdna.artstation.com/p/assets/images/images/063/052/432/4k/huleeb-1225-20-may-2023-final.jpg?1684591134" target="_blank">source</a>
+      </div>
 
-    <div class="section">
-      <h2>current role</h2>
-      <p class="title">tennet nl — policy advisor system operations (2021–now)</p>
-      <ul>
-        <li>developing online dsa tool for voltage & transient stability</li>
-        <li>working on vsa (power flow) and tsa (rms-based)</li>
-        <li>supporting new ems/scada — state estimation tuning</li>
-      </ul>
-    </div>
+      <div class="section">
+        <h2>current role</h2>
+        <p class="title">tennet nl — policy advisor system operations (2021–now)</p>
+        <ul>
+          <li>developing online dsa tool for voltage & transient stability</li>
+          <li>working on vsa (power flow) and tsa (rms-based)</li>
+          <li>supporting new ems/scada — state estimation tuning</li>
+        </ul>
+      </div>
 
-    <div class="section">
-      <h2>past experience</h2>
-      <p class="title">kema labs — power electronics researcher (2021)</p>
-      <ul><li>studied inverter/sst/evse interactions with grid</li></ul>
-      <p class="title">kema labs — electrical test engineer (2018–2020)</p>
-      <ul><li>ran short-circuit & certification tests on mv equipment</li></ul>
-      <p class="title">dnv gl — research intern (2017)</p>
-      <ul><li>developed vpp model for imbalance market participation</li></ul>
-      <p class="title">ecn — research intern (2016)</p>
-      <ul><li>offshore wind network modeling & tool development</li></ul>
-    </div>
+      <div class="section">
+        <h2>past experience</h2>
+        <p class="title">kema labs — power electronics researcher (2021)</p>
+        <ul><li>studied inverter/sst/evse interactions with grid</li></ul>
+        <p class="title">kema labs — electrical test engineer (2018–2020)</p>
+        <ul><li>ran short-circuit & certification tests on mv equipment</li></ul>
+        <p class="title">dnv gl — research intern (2017)</p>
+        <ul><li>developed vpp model for imbalance market participation</li></ul>
+        <p class="title">ecn — research intern (2016)</p>
+        <ul><li>offshore wind network modeling & tool development</li></ul>
+      </div>
 
-    <div class="section">
-      <h2>education</h2>
-      <p><span class="title">tu delft</span> — msc electrical engineering (2015–2017)</p>
-      <p><span class="title">wput szczecin</span> — beng electrical engineering (2010–2015)</p>
-    </div>
+      <div class="section">
+        <h2>education</h2>
+        <p><span class="title">tu delft</span> — msc electrical engineering (2015–2017)</p>
+        <p><span class="title">wput szczecin</span> — beng electrical engineering (2010–2015)</p>
+      </div>
 
-    <div class="section">
-      <h2>courses</h2>
-      <ul>
-        <li>powerfactory scripting w/ python (2022)</li>
-        <li>time domain simulation (2022)</li>
-        <li>power system stability (2022)</li>
-        <li>rtds & sustainable energy — tu delft (2023)</li>
-      </ul>
-    </div>
+      <div class="section">
+        <h2>courses</h2>
+        <ul>
+          <li>powerfactory scripting w/ python (2022)</li>
+          <li>time domain simulation (2022)</li>
+          <li>power system stability (2022)</li>
+          <li>rtds & sustainable energy — tu delft (2023)</li>
+        </ul>
+      </div>
 
-    <div class="section">
-      <h2>skills</h2>
-      <ul>
-        <li>python, powerfactory, psse</li>
-        <li>state estimation, vsa, tsa</li>
-        <li>rms simulation, model tuning</li>
-      </ul>
+      <div class="section">
+        <h2>skills</h2>
+        <ul>
+          <li>python, powerfactory, psse</li>
+          <li>state estimation, vsa, tsa</li>
+          <li>rms simulation, model tuning</li>
+        </ul>
+      </div>
     </div>
+    <div class="right"></div>
   </div>
 </body>
 </html>
