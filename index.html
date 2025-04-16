@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>norbert — cv</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'VT323', monospace;
+      background-color: #eeeeee;
+      color: #333;
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+    .nav {
+      display: flex;
+      justify-content: flex-start;
+      padding: 1rem 2rem;
+      background: #ddd;
+      border-bottom: 2px solid #bbb;
+      font-size: 1.5rem;
+    }
+    .nav a {
+      margin-right: 2rem;
+      text-decoration: none;
+      color: #222;
+      cursor: pointer;
+    }
+    .content {
+      display: flex;
+      justify-content: flex-end;
+      padding: 2rem;
+    }
+    .inner {
+      max-width: 700px;
+    }
+    h1 {
+      font-size: 3rem;
+      border-bottom: 2px solid #bbb;
+      padding-bottom: 0.5rem;
+      text-transform: lowercase;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #555;
+      text-transform: lowercase;
+      border-bottom: 1px dashed #aaa;
+      margin-top: 3rem;
+      padding-bottom: 0.25rem;
+    }
+    ul {
+      padding-left: 1rem;
+    }
+    li {
+      margin-bottom: 0.4rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .title {
+      font-weight: bold;
+      color: #111;
+    }
+    p {
+      margin: 0.25rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="#">home</a>
+    <a href="#contact">contact</a>
+  </div>
+  <div class="content">
+    <div class="inner">
+      <h1>norbert — cv</h1>
+
+      <div class="section" id="contact">
+        <h2>contact</h2>
+        <p>netherlands</p>
+      </div>
+
+      <div class="section">
+        <h2>current role</h2>
+        <p class="title">tennet nl — policy advisor system operations (2021–now)</p>
+        <ul>
+          <li>developing online dsa tool for voltage & transient stability</li>
+          <li>working on vsa (power flow) and tsa (rms-based)</li>
+          <li>supporting new ems/scada — state estimation tuning</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>past experience</h2>
+        <p class="title">kema labs — power electronics researcher (2021)</p>
+        <ul><li>studied inverter/sst/evse interactions with grid</li></ul>
+        <p class="title">kema labs — electrical test engineer (2018–2020)</p>
+        <ul><li>ran short-circuit & certification tests on mv equipment</li></ul>
+        <p class="title">dnv gl — research intern (2017)</p>
+        <ul><li>developed vpp model for imbalance market participation</li></ul>
+        <p class="title">ecn — research intern (2016)</p>
+        <ul><li>offshore wind network modeling & tool development</li></ul>
+      </div>
+
+      <div class="section">
+        <h2>education</h2>
+        <p><span class="title">tu delft</span> — msc electrical engineering (2015–2017)</p>
+        <p><span class="title">wput szczecin</span> — beng electrical engineering (2010–2015)</p>
+      </div>
+
+      <div class="section">
+        <h2>courses</h2>
+        <ul>
+          <li>powerfactory scripting w/ python (2022)</li>
+          <li>time domain simulation (2022)</li>
+          <li>power system stability (2022)</li>
+          <li>rtds & sustainable energy — tu delft (2023)</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>skills</h2>
+        <ul>
+          <li>python, powerfactory, psse</li>
+          <li>state estimation, vsa, tsa</li>
+          <li>rms simulation, model tuning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
