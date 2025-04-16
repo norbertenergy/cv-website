@@ -30,12 +30,20 @@
       cursor: pointer;
     }
     .content {
-      display: flex;
-      justify-content: flex-end;
       padding: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: 10%;
     }
-    .inner {
-      max-width: 700px;
+    .hero-image {
+      width: 100%;
+      margin: 2rem 0;
+      border: 1px solid #ccc;
+    }
+    .credit {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 2rem;
     }
     h1 {
       font-size: 3rem;
@@ -76,60 +84,64 @@
     <a href="#contact">contact</a>
   </div>
   <div class="content">
-    <div class="inner">
-      <h1>norbert — cv</h1>
+    <h1>norbert — cv</h1>
 
-      <div class="section" id="contact">
-        <h2>contact</h2>
-        <p>netherlands</p>
-      </div>
+    <img class="hero-image" src="artwork-by-huleeb.jpg" alt="Artwork by Huleeb">
+    <div class="credit">
+      image by <a href="https://www.artstation.com/huleeb" target="_blank" style="color:#444; text-decoration: underline;">Huleeb</a> — <a href="https://cdna.artstation.com/p/assets/images/images/063/052/432/4k/huleeb-1225-20-may-2023-final.jpg?1684591134" target="_blank" style="color:#444; text-decoration: underline;">source</a>
+    </div>
 
-      <div class="section">
-        <h2>current role</h2>
-        <p class="title">tennet nl — policy advisor system operations (2021–now)</p>
-        <ul>
-          <li>developing online dsa tool for voltage & transient stability</li>
-          <li>working on vsa (power flow) and tsa (rms-based)</li>
-          <li>supporting new ems/scada — state estimation tuning</li>
-        </ul>
-      </div>
+    <div class="section" id="contact">
+      <h2>contact</h2>
+      <p>netherlands</p>
+      <p>norbert.rosman@gmail.com</p>
+    </div>
 
-      <div class="section">
-        <h2>past experience</h2>
-        <p class="title">kema labs — power electronics researcher (2021)</p>
-        <ul><li>studied inverter/sst/evse interactions with grid</li></ul>
-        <p class="title">kema labs — electrical test engineer (2018–2020)</p>
-        <ul><li>ran short-circuit & certification tests on mv equipment</li></ul>
-        <p class="title">dnv gl — research intern (2017)</p>
-        <ul><li>developed vpp model for imbalance market participation</li></ul>
-        <p class="title">ecn — research intern (2016)</p>
-        <ul><li>offshore wind network modeling & tool development</li></ul>
-      </div>
+    <div class="section">
+      <h2>current role</h2>
+      <p class="title">tennet nl — policy advisor system operations (2021–now)</p>
+      <ul>
+        <li>developing online dsa tool for voltage & transient stability</li>
+        <li>working on vsa (power flow) and tsa (rms-based)</li>
+        <li>supporting new ems/scada — state estimation tuning</li>
+      </ul>
+    </div>
 
-      <div class="section">
-        <h2>education</h2>
-        <p><span class="title">tu delft</span> — msc electrical engineering (2015–2017)</p>
-        <p><span class="title">wput szczecin</span> — beng electrical engineering (2010–2015)</p>
-      </div>
+    <div class="section">
+      <h2>past experience</h2>
+      <p class="title">kema labs — power electronics researcher (2021)</p>
+      <ul><li>studied inverter/sst/evse interactions with grid</li></ul>
+      <p class="title">kema labs — electrical test engineer (2018–2020)</p>
+      <ul><li>ran short-circuit & certification tests on mv equipment</li></ul>
+      <p class="title">dnv gl — research intern (2017)</p>
+      <ul><li>developed vpp model for imbalance market participation</li></ul>
+      <p class="title">ecn — research intern (2016)</p>
+      <ul><li>offshore wind network modeling & tool development</li></ul>
+    </div>
 
-      <div class="section">
-        <h2>courses</h2>
-        <ul>
-          <li>powerfactory scripting w/ python (2022)</li>
-          <li>time domain simulation (2022)</li>
-          <li>power system stability (2022)</li>
-          <li>rtds & sustainable energy — tu delft (2023)</li>
-        </ul>
-      </div>
+    <div class="section">
+      <h2>education</h2>
+      <p><span class="title">tu delft</span> — msc electrical engineering (2015–2017)</p>
+      <p><span class="title">wput szczecin</span> — beng electrical engineering (2010–2015)</p>
+    </div>
 
-      <div class="section">
-        <h2>skills</h2>
-        <ul>
-          <li>python, powerfactory, psse</li>
-          <li>state estimation, vsa, tsa</li>
-          <li>rms simulation, model tuning</li>
-        </ul>
-      </div>
+    <div class="section">
+      <h2>courses</h2>
+      <ul>
+        <li>powerfactory scripting w/ python (2022)</li>
+        <li>time domain simulation (2022)</li>
+        <li>power system stability (2022)</li>
+        <li>rtds & sustainable energy — tu delft (2023)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>skills</h2>
+      <ul>
+        <li>python, powerfactory, psse</li>
+        <li>state estimation, vsa, tsa</li>
+        <li>rms simulation, model tuning</li>
+      </ul>
     </div>
   </div>
 </body>
