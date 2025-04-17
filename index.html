@@ -104,6 +104,38 @@
     p {
       margin: 0.25rem 0;
     }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .wrapper {
+        display: block;
+      }
+
+      .nav {
+        flex-direction: column;
+        font-size: 1.2rem;
+        gap: 0.5rem;
+      }
+
+      .content {
+        width: auto;
+        border-left: none;
+        border-right: none;
+        padding: 1.5rem 1rem;
+      }
+
+      .hero-image {
+        margin-top: 1rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
