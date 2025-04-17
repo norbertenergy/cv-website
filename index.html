@@ -10,23 +10,25 @@
       margin: 0;
       padding: 0;
       font-family: 'Cutive', monospace;
-      font-size: 1.25rem;
-      line-height: 1.8;
+      font-size: 0.8rem;
+      line-height: 1;
       color: #333;
       background-color: #fdfcf6;
     }
 
     .nav {
       display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
       justify-content: flex-start;
+      align-items: center;
       padding: 1rem 2rem;
       background-color: #e7e5db;
-      border-bottom: 2px solid #bbb;
-      font-size: 1.5rem;
+      border-bottom: 1px solid #bbb;
+      font-size: 1rem;
     }
 
     .nav a {
-      margin-right: 2rem;
       text-decoration: none;
       color: #222;
       cursor: pointer;
@@ -58,13 +60,13 @@
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
       text-transform: lowercase;
       margin: 0;
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: #555;
       text-transform: lowercase;
       border-bottom: 1px dashed #aaa;
@@ -79,7 +81,7 @@
     }
 
     .credit {
-      font-size: 1rem;
+      font-size: 0.85rem;
       color: #666;
       margin-bottom: 2rem;
     }
@@ -105,16 +107,15 @@
       margin: 0.25rem 0;
     }
 
-    /* Mobile styles */
     @media (max-width: 768px) {
       .wrapper {
         display: block;
       }
 
       .nav {
-        flex-direction: column;
-        font-size: 1.2rem;
-        gap: 0.5rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 0.95rem;
       }
 
       .content {
@@ -124,16 +125,12 @@
         padding: 1.5rem 1rem;
       }
 
-      .hero-image {
-        margin-top: 1rem;
-      }
-
       h1 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
       }
 
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
     }
   </style>
@@ -183,7 +180,7 @@
       <div class="section">
         <h2>education</h2>
         <p><span class="title">tu delft</span> — msc electrical engineering (2015–2017)</p>
-        <p><span class="title">zut szczecin</span> — b.eng electrical engineering (2010–2015)</p>
+        <p><span class="title">wput szczecin</span> — beng electrical engineering (2010–2015)</p>
       </div>
 
       <div class="section">
